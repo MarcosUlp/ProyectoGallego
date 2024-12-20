@@ -1,3 +1,146 @@
-body{
-    background: url(Imagen\ de\ WhatsApp\ 2024-12-17\ a\ las\ 22.38.23_90a852ac.jpg);
+/* Estilo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background: url(img/imgfondo.jpg) no-repeat center center;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+}
+
+.menu-hamburguesa {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-hamburguesa span {
+    background: white;
+    height: 3px;
+    width: 25px;
+    display: block;
+}
+
+.menu-desplegable {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-desplegable ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.menu-desplegable li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 10px;
+}
+
+.menu-desplegable.activo {
+    display: block;
+}
+
+/* Redes Sociales */
+.redes-sociales a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.redes-sociales .instagram:hover {
+    color: #E1306C;
+}
+
+.redes-sociales .facebook:hover {
+    color: #4267B2;
+}
+
+.redes-sociales .whatsapp:hover {
+    color: #25D366;
+}
+
+/* Catálogo */
+.catalogo {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.tabla-catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.item p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: #333;
 }
